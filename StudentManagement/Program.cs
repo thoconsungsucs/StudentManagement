@@ -8,8 +8,9 @@ namespace ConsoleApp1
         static StudentManager StudentManager = new StudentManager();
         static TeacherManager TeacherManager = new TeacherManager();
 
-        public void Init()
+        public static void Init()
         {
+            Console.WriteLine("Init data");
             Teacher teacher1 = new Teacher
             {
                 Name = "Nguyen Van A",
@@ -53,6 +54,7 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
+            Init();
             bool flag = true;
             while (flag)
             {
